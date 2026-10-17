@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/backgroung_thong_tin_chi_tiet_dat_hang"
+    android:layout_margin="6dp"
+    android:elevation="2dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Trạng thái đơn hàng ở góc phải -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+        <TextView
+            android:id="@+id/txt_status_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đã đặt"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="#2196F3"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Mã đơn -->
+    <TextView
+        android:id="@+id/txt_order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã đơn: #123"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:fontFamily="serif"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Tên khách hàng -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên khách hàng: "
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#333333"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/txt_customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Nguyễn Văn A"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:textColor="#333333"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <!-- Danh sách sản phẩm -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Danh sách sản phẩm:"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#333333"
+        android:layout_marginTop="2dp"/>
+    <TextView
+        android:id="@+id/txt_product_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="- Rau muống: 2 bó,  20.000đ\n-  Cà chua: 1kg, 15.000đ"
+        android:fontFamily="serif"
+        android:textColor="#444444"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Gạch ngang ngăn cách -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Tổng tiền -->
+    <TextView
+        android:id="@+id/txt_total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tổng tiền: 35.000 VNĐ"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:gravity="end"/>
+
+</LinearLayout>

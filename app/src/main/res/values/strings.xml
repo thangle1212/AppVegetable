@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name" translatable="false">AppVegetables</string>
+    <string name="txt_hello" translatable="false">Xin chào,</string>
+    <string name="txt_hello_2" translatable="false">Bạn muốn mua gì hôm nay?</string>
+    <string name="hint_..." translatable="false">...</string>
+    <string name="hint_search" translatable="false">Tìm kiếm...</string>
+    <string name="txt_tp_pho_bien" translatable="false">Thực phẩm phổ biến </string>
+    <string name="txt_rau_muong" translatable="false"> Rau muống</string>
+    <string name="txt_gia_rau_muong" translatable="false">10.000đ/1 bó</string>
+    <string name="txt_login">Đăng Nhập </string>
+    <string name="txt_dang_ki">Đăng Kí </string>
+    <string name="txt_forgot_pass">Quên mật khẩu </string>
+    <string name="txt_home"> Trang chủ </string>
+    <string name="txt_cart"> Giỏ hàng </string>
+    <string name="txt_order"> Đơn hàng  </string>
+    <string name="txt_account"> Tài khoản   </string>
+    <string name="txt_tong_tien">Tổng tiền: </string>
+    <string name="hint_tong_tien">10.000 </string>
+    <string name="txt_VND">VNĐ </string>
+    <string name="btn_dat_hang"> Đặt Hàng  </string>
+    <string name="txt_product_info"> Chi tiết sản phẩm   </string>
+    <string name="txt_detail_don_hang"> Chi tiết đơn hàng   </string>
+    <string name="txt_don_dat"> Đơn đặt </string>
+    <string name="txt_dơn_dat_ship"> Giao hàng </string>
+    <string name="txt_dơn_dat_done"> Hoàn thành  </string>
+    <string name="txt_dơn_dat_huy"> Đơn hủy</string>
+    <string name="txt_doi_mat_khau"> Đổi mật khẩu   </string>
+    <string name="txt_thong_ke"> Thống kê  </string>
+    <string name="txt_thong_ke2"> Thống kê doanh thu </string>
+                                                                   <!-- Mô tả sản phẩm -->
+
+    <string name="default_product_description">Sản phẩm tươi ngon, đảm bảo chất lượng.
+        Xuất xứ rõ ràng, an toàn vệ sinh thực phẩm.</string>
+    <!--rau muống-->
+    <string name="rau_muong_description">🌿 RAU MUỐNG TƯƠI SẠCH\nLựa chọn số 1 cho bữa cơm gia đình!\n\n✨ Đặc điểm:\n   - Lá xanh mướt, thân giòn sần sật\n
+        - Hương vị ngọt thanh tự nhiên\n\n💚 Dinh dưỡng:\n   - Giàu Vitamin A, C và chất xơ\n   - Thanh nhiệt, giải độc\n   - Hỗ trợ tiêu hóa khỏe mạnh\n\n👨‍🍳 Chế biến:\n
+        - Luộc, xào tỏi hoặc làm gỏi\n\n📅 HSD: 3 ngày từ ngày thu hoạch\n\nMua ngay để bổ sung món rau tươi ngon, an toàn và bổ dưỡng!</string>
+
+    <!--bắp cải -->
+    <string name="bap_cai_description"><b>🥬 BẮP CẢI TƯƠI GIÒN</b>\nVua của các loại rau mùa lạnh!\n\n•
+        <b>Đặc điểm:</b> Tròn chắc, lá cuộn chặt, màu xanh mướt\n• <b>Hương vị:</b> Vị ngọt tự nhiên, giòn tan, không hề bị hăng\n• <b>Dinh dưỡng:</b>
+        Giàu Vitamin K, C và chất chống oxy hóa\n• <b>Công dụng:</b> Tăng cường miễn dịch, bảo vệ tim mạch\n• <b>Chế biến:</b> Luộc, salad, muối dưa,
+        nấu canh sườn\n\nMua ngay để món ăn thêm phần thanh mát và bổ dưỡng!</string>
+
+    <!--dưa chuột-->
+    <string name="dua_chuot_description">🥒 DƯA CHUỘT GIÒN TAN\nMát lạnh cho ngày hè oi bức!\n\n🌿 Đặc điểm:\n   - Quả dài thẳng, vỏ xanh mướt\n
+        - Ruột trắng ngần, hạt non mềm\n   - Giòn sần sật, vị ngọt thanh mát\n\n💧 Dinh dưỡng:\n   - 95% là nước tinh khiết\n   - Giàu Vitamin K, kali\n
+        - Chất chống oxy hóa mạnh\n   - Chỉ 15 calories/trái\n\n🍽️ Chế biến:\n   - Ăn sống chấm muối\n   - Salad trộn tươi ngon\n   - Nước ép detox\n
+        - Làm đẹp da mặt\n\n📦 Bảo quản: 5-7 ngày, nhiệt độ mát</string>
+    <string name="txt_info_don_hang">Thông tin đơn hàng</string>
+    <string name="info_khach_hang">Sản phẩm sẽ hiển thị ở đây</string>
+    <string name="txt_time">Thời gian:</string>
+    <string name="txt_tong_thanh_toan">Tổng thanh toán:</string>
+    <string name="txt_0_VND">0 VND</string>
+    <string name="txt_pttt">Phương thức thanh toán</string>
+    <string name="txt_ttknh">Thanh toán khi nhận hàng (COD)</string>
+    <string name="thong_tin_ca_nhan">Thông tin cá nhân</string>
+    <string name="txt_ho_ten">Họ và tên:</string>
+
+</resources>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Nội dung chính -->
+    <LinearLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_above="@id/layoutFooter">
+
+        <!-- Thanh tiêu đề -->
+        <TextView
+            android:fontFamily="serif"
+            android:textSize="26sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="Tài khoản"
+            android:background="#8DF68E"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:textColor="#000" />
+
+        <!-- Ảnh đại diện + tên -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:paddingBottom="20dp">
+
+            <!-- Ảnh đại diện tròn -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/user_image"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#8DF68E" />
+
+            <!-- Tên người dùng -->
+            <TextView
+                android:id="@+id/txt_User_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên người dùng"
+                android:textSize="18sp"
+                android:textColor="#333333"
+                android:layout_marginTop="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Dòng kẻ ngăn cách -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Nút Thông tin cá nhân -->
+        <LinearLayout
+            android:id="@+id/btnThongTin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/backgroung_thong_tin_chi_tiet_dat_hang"
+            android:clickable="true"
+            android:focusable="true">
+
+            <!-- Icon thông tin cá nhân -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/icon_user"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Thông tin cá nhân"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:textColor="#000" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_chevron_right" />
+        </LinearLayout>
+
+        <!-- Nút Đổi mật khẩu -->
+        <LinearLayout
+            android:id="@+id/btnDoiMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/backgroung_thong_tin_chi_tiet_dat_hang"
+            android:clickable="true"
+            android:focusable="true">
+
+            <!-- Icon đổi mật khẩu -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/icon_lock"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Đổi mật khẩu"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:textColor="#000" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_chevron_right" />
+        </LinearLayout>
+
+        <!-- Nút Đăng xuất -->
+        <LinearLayout
+            android:id="@+id/btnDangXuat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:background="@drawable/backgroung_thong_tin_chi_tiet_dat_hang"
+            android:clickable="true"
+            android:layout_margin="10dp"
+            android:focusable="true">
+
+            <!-- Icon đăng xuất -->
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/icon_logout"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Đăng xuất"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_chevron_right" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Menu khách hàng (footer) cố định dưới cùng -->
+    <include
+        android:id="@+id/layoutFooter"
+        layout="@layout/menu_khach_hang"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

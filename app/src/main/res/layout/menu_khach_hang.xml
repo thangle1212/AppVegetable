@@ -1,0 +1,128 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_menu_customer"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#C1D1C6"
+    android:padding="8dp"
+    android:animateLayoutChanges="true">
+
+    <!-- Icon 1 -->
+    <LinearLayout
+        android:id="@+id/item_Home_customer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_menu_customer"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <ImageView
+            android:id="@+id/icon_Home_customer"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_home" />
+
+        <TextView
+            android:id="@+id/text_Home_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_home"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- Icon 2 -->
+    <LinearLayout
+        android:id="@+id/item_cart_customer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_menu_customer"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <ImageView
+            android:id="@+id/icon_cart_customer"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_cart" />
+
+        <TextView
+            android:id="@+id/text_cart_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_cart"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- Icon 3 -->
+    <LinearLayout
+        android:id="@+id/item_order_customer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_menu_customer"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <ImageView
+            android:id="@+id/icon_order_customer"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_order" />
+
+        <TextView
+            android:id="@+id/text_order_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_order"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- Icon 4 -->
+    <LinearLayout
+        android:id="@+id/item_account_customer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_menu_customer"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <ImageView
+            android:id="@+id/icon_account_customer"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_account" />
+
+        <TextView
+            android:id="@+id/text_account_customer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_account"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

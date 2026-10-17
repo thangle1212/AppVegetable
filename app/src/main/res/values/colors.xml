@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- res/values/colors.xml -->
+    <color name="primary_green">#4CAF50</color>      <!-- Xanh lá tươi sáng -->
+    <color name="primary_dark_green">#388E3C</color> <!-- Xanh lá đậm -->
+    <color name="primary_light_green">#C8E6C9</color> <!-- Xanh lá nhạt -->
+    <color name="accent_orange">#FF9800</color>      <!-- Cam - màu củ cà rốt -->
+    <color name="accent_red">#F44336</color>         <!-- Đỏ - màu cà chua -->
+    <color name="accent_purple">#9C27B0</color>      <!-- Tím - màu cà tím -->
+    <color name="background_light">#F8FDF8</color>    <!-- Nền sáng xanh nhạt -->
+    <color name="background_white">#FFFFFF</color>    <!-- Trắng -->
+    <color name="background_grey">#F5F5F5</color>     <!-- Xám nhạt -->
+    <color name="background_grey_light">#D3D3D3</color>     <!-- Xám sáng -->
+</resources>

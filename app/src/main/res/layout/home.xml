@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    tools:context=".home.Home">
+
+    <!-- Nội dung chính có thể cuộn -->
+    <ScrollView
+        android:id="@+id/scrollViewContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/menu_khach_hang"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:paddingTop="10dp"
+        android:paddingBottom="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="0dp">
+
+            <!-- Dòng chào người dùng -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/txt_hello"
+                    android:textColor="@color/primary_dark_green"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_hello"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="serif"
+                    android:hint="@string/hint_..."
+                    android:textColor="@color/primary_green"
+                    android:textColorHint="#78909C"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="serif"
+                android:text="@string/txt_hello_2"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+
+            <!-- Thanh tìm kiếm -->
+            <EditText
+                android:id="@+id/search_Bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/search_rounded"
+                android:drawableEnd="@android:drawable/ic_menu_search"
+                android:hint="@string/hint_search"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#8D6E63"/>
+
+
+            <!-- Slider ảnh ngang -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="159dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/background_white" />
+
+            <!-- Tiêu đề danh sách rau -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="serif"
+                android:text="@string/txt_tp_pho_bien"
+                android:textColor="@color/primary_dark_green"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Danh sách rau -->
+            <GridView
+                android:id="@+id/gv_ds_thuc_pham"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:horizontalSpacing="16dp"
+                android:numColumns="2"
+                android:padding="0dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="16dp"
+                android:background="@color/background_light"
+                tools:ignore="NestedScrolling" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Menu khách hàng cố định dưới -->
+    <include
+        android:id="@+id/menu_khach_hang"
+        layout="@layout/menu_khach_hang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/primary_green" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!-- Phần giỏ hàng hiện tại của bạn -->
+    <TextView
+        android:fontFamily="serif"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/txt_cart"
+        android:background="#8DF68E"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_cart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="#8DF68E"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/txt_tong_tien"
+            android:textSize="23sp"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_tong_tien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:layout_gravity="center"
+            android:hint="@string/hint_tong_tien"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/txt_VND"
+            android:layout_gravity="center"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_don_hang"
+            android:text="@string/btn_dat_hang"
+            android:background="@drawable/btn_hcn_bo_tron"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            app:backgroundTint="@null"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- THÊM MENU VÀO ĐÂY -->
+    <include layout="@layout/menu_khach_hang"/>
+
+</LinearLayout>

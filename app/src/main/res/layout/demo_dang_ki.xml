@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/form_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:paddingTop="24dp">
+
+        <!--  nhập tài khoản -->
+        <EditText
+            android:id="@+id/edt_user_dang_ki"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Tên đăng nhập"
+            android:background="@drawable/edt_hcn_bo_tron"
+            android:inputType="text"
+            android:drawableStart="@drawable/icon_user"
+            android:drawablePadding="8dp"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- nhập mật khẩu -->
+        <EditText
+            android:id="@+id/edt_pass_dang_ki"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Mật khẩu"
+            android:background="@drawable/edt_hcn_bo_tron"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/icon_lock"
+            android:drawableEnd="@drawable/icon_eye_visibility"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="8dp"
+            android:padding="12dp"/>
+ <!-- nhập lại mật khẩu -->
+
+        <EditText
+            android:id="@+id/edt_pass_re_enter"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edt_hcn_bo_tron"
+            android:drawableStart="@drawable/icon_lock"
+            android:drawableEnd="@drawable/icon_eye_visibility"
+            android:drawablePadding="8dp"
+            android:hint="Nhập lại mật khẩu"
+            android:inputType="text"
+            android:padding="12dp" />
+ <!-- button đăng nhập -->
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/txt_dang_ki"
+            android:backgroundTint="#81B4AA"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif-condensed"/>
+    </LinearLayout>
+
+</LinearLayout>

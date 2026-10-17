@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Thanh tiêu đề -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="THỐNG KÊ DOANH THU"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:background="#8DF68E" />
+
+        <!-- Khu vực chọn ngày -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="468dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/backgroung_thong_tin_chi_tiet_dat_hang"
+            android:elevation="3dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="CHỌN KHOẢNG THỜI GIAN"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Ngày bắt đầu -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Ngày bắt đầu:"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtNgayBatDau"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edt_hcn_bo_tron"
+                    android:focusable="false"
+                    android:hint="DD/MM/YYYY"
+                    android:padding="12dp" />
+
+            </LinearLayout>
+
+            <!-- Ngày kết thúc -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Ngày kết thúc:"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtNgayKetThuc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edt_hcn_bo_tron"
+                    android:focusable="false"
+                    android:hint="DD/MM/YYYY"
+                    android:padding="12dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="DOANH THU"
+                android:textColor="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDoanhThu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#CCBBDCD4"
+                android:gravity="center"
+                android:padding="20dp"
+                android:hint="Doanh thu.... "
+                android:textColor="#958A8A"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnThongKe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_hcn_bo_tron"
+                android:elevation="4dp"
+                android:padding="16dp"
+                android:text="THỐNG KÊ DOANH THU"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:backgroundTint="@null" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

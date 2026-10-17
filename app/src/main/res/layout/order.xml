@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/tvTieuDe"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#8DF68E"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:text="@string/txt_don_dat"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Thanh trạng thái đơn hàng -->
+    <LinearLayout
+        android:id="@+id/layout_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#D5C8C8"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txt_don_dat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:text="@string/txt_don_dat"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/txt_don_huy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:text="@string/txt_dơn_dat_huy"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <!-- Danh sách đơn hàng -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_don_hang"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp" />
+
+    <!-- Menu khách hàng -->
+    <include layout="@layout/menu_khach_hang" />
+
+</LinearLayout>

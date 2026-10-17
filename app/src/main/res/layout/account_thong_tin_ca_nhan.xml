@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Thanh tiêu đề -->
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="@string/thong_tin_ca_nhan"
+            android:textSize="24sp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:background="#8DF68E" />
+
+        <!-- Ảnh đại diện -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgUser"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/user_image"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#8DF68E" />
+
+        </LinearLayout>
+
+        <!-- Ô nhập thông tin -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@drawable/backgroung_thong_tin_chi_tiet_dat_hang"
+            android:elevation="3dp">
+
+            <!-- Họ tên -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_ho_ten"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="8dp" />
+            <EditText
+                android:id="@+id/edt_Ho_Ten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập họ và tên"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:background="@drawable/edt_hcn_bo_tron"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/edt_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:background="@drawable/edt_hcn_bo_tron"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <!-- Số điện thoại -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số điện thoại:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/edt_So_Dien_Thoai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập số điện thoại"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:background="@drawable/edt_hcn_bo_tron"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <!-- Giới tính -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Giới tính:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                tools:ignore="HardcodedText" />
+
+            <RadioGroup
+                android:id="@+id/rdg_Gioi_Tinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <RadioButton
+                    android:id="@+id/rd_Nam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nam"
+                    android:textSize="16sp"
+                    android:padding="5dp"
+                    android:checked="true"
+                    tools:ignore="HardcodedText" />
+
+                <RadioButton
+                    android:id="@+id/rd_Nu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nữ"
+                    android:textSize="16sp"
+                    android:padding="5dp"
+                    tools:ignore="HardcodedText" />
+            </RadioGroup>
+
+            <!-- Năm sinh -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Năm sinh:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"
+                tools:ignore="HardcodedText" />
+            <EditText
+                android:id="@+id/edt_Nam_Sinh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập năm sinh"
+                android:inputType="number"
+                android:padding="10dp"
+                android:background="@drawable/edt_hcn_bo_tron"
+                tools:ignore="Autofill,HardcodedText" />
+        </LinearLayout>
+
+        <!-- Nút lưu -->
+        <Button
+            android:id="@+id/btnLuuThongTin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lưu thay đổi"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_hcn_bo_tron"
+            app:backgroundTint="@null"
+            android:padding="12dp"
+            android:elevation="4dp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</ScrollView>
